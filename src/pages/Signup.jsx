@@ -66,7 +66,7 @@ function Signup(props) {
                     props.showAlert("Account created successfully","success")
                 }
             } else {
-                setErrors("Try again.")
+                navigate("/login")
             }
         } catch (error) {
                 setErrors("Wait.. Don't move fast.. Pay attention while creating account")
